@@ -31,4 +31,8 @@ app.post("/login", (req, res, next) => {
   res.json({ token, user: req.body.user });
 });
 
+app.get("/", (req, res) => {
+  return res.json({ myApp: "**Aqui é meu humilde APP back-end!!" });
+});
+
 export default app;
