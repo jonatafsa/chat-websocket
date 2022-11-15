@@ -20,6 +20,9 @@ function App() {
 
   useEffect(() => {
     setToken(Cookies.get("token") as string || "")
+    ws.onopen = (data) => {
+      console.log(data)
+    }
   }, [])
 
   ws.onmessage = (event: MessageEvent) => {
