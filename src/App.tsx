@@ -27,7 +27,7 @@ function App() {
     setTimeout(() => endScroll(), 100)
   }
 
-  function sendMessage() {
+  function sendMessage(e: any) {
     const data = {
       token: Cookies.get("token"),
       username: Cookies.get("username"),
@@ -35,6 +35,7 @@ function App() {
       message
     }
     ws.send(JSON.stringify(data))
+    e.target.value = ""
   }
 
   function endScroll() {
@@ -63,7 +64,7 @@ function App() {
     const data = { user }
     console.log(data)
 
-    fetch("http://localhost:3333/login", {
+    fetch("https://server-websocket.azurewebsites.net/login", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'

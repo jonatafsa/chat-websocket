@@ -8,7 +8,7 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/jonatafsa/chat-websocket?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/jonatafsa/chat-websocket?style=for-the-badge)
 
-<img src="https://raw.githubusercontent.com/jonatafsa/chat-websocket/master/public/example-bg.jpeg" alt="exemplo imagem">
+<img src="https://github.com/jonatafsa/chat-websocket/blob/master/public/example-bg.png?raw=true" alt="exemplo imagem">
 
 > O projeto é feito usando Websocket para inserção e atualização dos dados do chat em tempo real para todos os usuários conectados ao back-end. Atualmente com login genérico para autenticação, onde o usuário ao logar abre o chat, e se conecta ao servidor Websocket, ambos o servidores, de autenticação e de webscoket rodam na mesma pora, porém o servidor de autentição é um servidor HTTP criado com o `< nodejs - Express >`.
 

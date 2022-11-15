@@ -1,4 +1,4 @@
-const Websocket = new WebSocket("ws://localhost:3333");
+const Websocket = new WebSocket("ws://server-websocket.azurewebsites.net/");
 
 Websocket.onopen = () => {
   console.log("Connected to websocket");
