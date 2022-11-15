@@ -242,6 +242,12 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
 
+  @media (max-width: 768px) {
+    height: 100vh;
+    /* Fallback para não-suporte a Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+  }
+
 }
 
 .signin {

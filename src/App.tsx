@@ -23,6 +23,12 @@ function App() {
     ws.onopen = (data) => {
       console.log(data)
     }
+
+    // Altura da viewport multiplicada por 1% para obter um valor para vh
+    let vh = window.innerHeight * 0.01;
+
+    // Configura o valor em --vh na raiz do documento
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
   }, [])
 
   ws.onmessage = (event: MessageEvent) => {
