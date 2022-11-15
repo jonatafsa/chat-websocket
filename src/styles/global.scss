@@ -314,6 +314,13 @@ nav {
   border: 1px solid rgba(204, 204, 204, 0.171);
   box-shadow: rgba(122, 19, 105, 0.349) 0px 7px 29px 0px;
 
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border-radius: 0;
+  }
+
   .messages {
     width: 100%;
     height: 90%;
@@ -349,6 +356,10 @@ nav {
       gap: 1rem;
       margin-top: auto;
 
+      @media (max-width: 768px) {
+        gap: .5rem;
+      }
+
       span {
         display: flex;
         align-items: center;
@@ -359,6 +370,11 @@ nav {
         color: rgb(255, 255, 255);
         font-size: 1rem;
         font-weight: 700;
+
+        @media (max-width: 768px) {
+          width: 130px;
+          font-size: .8rem;
+        }
       }
 
       p {
@@ -368,6 +384,11 @@ nav {
         background-color: rgba(255, 255, 255, 0.76);
         border-radius: 10px;
         font-size: .9rem;
+
+        @media (max-width: 768px) {
+          max-width: 70%;
+          font-size: .85rem;
+        }
       }
     }
 
@@ -393,6 +414,10 @@ nav {
     align-items: center;
     gap: 1rem;
     padding-right: 2rem;
+
+    @media (max-width: 768px) {
+      padding: 1rem;
+    }
 
     input {
       flex: 1;
